@@ -1,0 +1,80 @@
+[
+    {
+        "class" : {
+            "input" : "productsForm_input",
+            "span" : "productsForm_input_placeholder"
+        },
+        "id": "title",
+        "type": "text",
+        "text": "Title"
+    },
+    {
+        "class" : {
+            "input" : "productsForm_input",
+            "span" : "productsForm_input_placeholder"
+        },
+        "id": "description",
+        "type": "text",
+        "text": "Description"
+    },
+    {
+        "class" : {
+            "input" : "productsForm_input",
+            "span" : "productsForm_input_placeholder"
+        },
+        "id": "category",
+        "type": "text",
+        "text": "Category"
+    },
+    {
+        "class" : {
+            "input" : "productsForm_input",
+            "span" : "productsForm_input_placeholder"
+        },
+        "id": "price",
+        "type": "number",
+        "text": "Price"
+    },
+    {
+        "class" : {
+            "input" : "productsForm_input",
+            "span" : "productsForm_input_placeholder"
+        },
+        "id": "thumbnails",
+        "type": "text",
+        "text": "Thumbnails"
+    },
+    {
+        "class" : {
+            "input" : "productsForm_input",
+            "span" : "productsForm_input_placeholder"
+        },
+        "id": "code",
+        "type": "text",
+        "text": "Code"
+    },
+    {
+        "class" : {
+            "input" : "productsForm_input",
+            "span" : "productsForm_input_placeholder"
+        },
+        "id": "stock",
+        "type": "number",
+        "text": "Stock"
+    },
+    {
+        "class": "statusOption",
+        "id": {
+            "one": "divTrue",
+            "two": "divFalse"
+        },
+        "dataValue" : {
+            "one" : "true",
+            "two" : "false"
+        },
+        "text": {
+            "one": "Available",
+            "two": "Not Available"
+        }
+    }
+]

@@ -1,0 +1,211 @@
+[
+    {
+        "id": 1,
+        "title": "Collar inteligente para perros",
+        "description": "Collar avanzado con GPS y monitor de actividad.",
+        "category": "collares",
+        "price": 249,
+        "thumbnail": "smart_dog_collar.jpg",
+        "code": "PET001",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 2,
+        "title": "Casa inteligente para gatos",
+        "description": "Casa moderna para gatos con control de temperatura y seguimiento de actividad.",
+        "category": "casas",
+        "price": 799,
+        "thumbnail": "smart_cat_house.jpg",
+        "code": "PET002",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 3,
+        "title": "Kit de aseo de lujo para mascotas",
+        "description": "Kit completo con todo lo necesario para el cuidado del pelaje y la piel de tu mascota.",
+        "category": "aseo",
+        "price": 999,
+        "thumbnail": "pet_grooming_kit.jpg",
+        "code": "PET003",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 4,
+        "title": "Juguete interactivo para perros",
+        "description": "Mantén a tu perro entretenido con este juguete interactivo que fomenta la actividad física.",
+        "category": "juguetes",
+        "price": 399,
+        "thumbnail": "interactive_dog_toy.jpg",
+        "code": "PET004",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 5,
+        "title": "Rascador premium para gatos",
+        "description": "Rascador de alta durabilidad y excelente para la salud de las uñas de tu gato.",
+        "category": "rascadores",
+        "price": 799,
+        "thumbnail": "cat_scratcher.jpg",
+        "code": "PET005",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 6,
+        "title": "Acuario inteligente",
+        "description": "Acuario con sistema de filtrado y luz automatizados para el cuidado óptimo de tus peces.",
+        "category": "acuarios",
+        "price": 1999,
+        "thumbnail": "smart_aquarium.jpg",
+        "code": "PET006",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 7,
+        "title": "Transportadora inteligente para mascotas",
+        "description": "Transportadora con control de clima y seguimiento por GPS para viajes seguros.",
+        "category": "transportadoras",
+        "price": 549,
+        "thumbnail": "smart_pet_carrier.jpg",
+        "code": "PET007",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 8,
+        "title": "Cama térmica para mascotas",
+        "description": "Cama con control de temperatura para garantizar el confort de tu mascota durante el invierno.",
+        "category": "camas",
+        "price": 1099,
+        "thumbnail": "heated_pet_bed.jpg",
+        "code": "PET008",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 9,
+        "title": "Sistema de alimentación automático",
+        "description": "Alimentador automático con programación horaria para asegurar la alimentación regular de tu mascota.",
+        "category": "alimentadores",
+        "price": 799,
+        "thumbnail": "automatic_feeder.jpg",
+        "code": "PET009",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 10,
+        "title": "Fuente de agua para mascotas",
+        "description": "Fuente que filtra y oxigena el agua, animando a tu mascota a beber más frecuentemente.",
+        "category": "fuentes",
+        "price": 499,
+        "thumbnail": "pet_water_fountain.jpg",
+        "code": "PET010",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 11,
+        "title": "Cámara de vigilancia para mascotas",
+        "description": "Cámara con micrófono y altavoz para comunicarte con tu mascota mientras no estás en casa.",
+        "category": "cámaras",
+        "price": 599,
+        "thumbnail": "pet_monitoring_camera.jpg",
+        "code": "PET011",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 12,
+        "title": "Identificador inteligente para mascotas",
+        "description": "Identificador con QR y GPS para mantener siempre localizada a tu mascota.",
+        "category": "identificadores",
+        "price": 19,
+        "thumbnail": "smart_pet_id.jpg",
+        "code": "PET012",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 13,
+        "title": "Kit de primeros auxilios para mascotas",
+        "description": "Equipo esencial para manejar pequeñas emergencias de salud en casa o durante viajes.",
+        "category": "salud",
+        "price": 29,
+        "thumbnail": "foto01.jpg",
+        "code": "PET013",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 14,
+        "title": "Airtag para mascotas",
+        "description": "Localizador pequeño y resistente al agua para asegurarte de que tu mascota nunca se pierda.",
+        "category": "localizadores",
+        "price": 29,
+        "thumbnail": "foto02.jpg",
+        "code": "PET014",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 15,
+        "title": "Protector de uñas para gatos",
+        "description": "Protector de uñas que previene daños en muebles y ayuda a controlar el crecimiento de las uñas.",
+        "category": "cuidado de uñas",
+        "price": 39.95,
+        "thumbnail": "foto03.jpg",
+        "code": "PET015",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 16,
+        "title": "Teclado entrenador para mascotas",
+        "description": "Teclado especial para enseñar trucos y órdenes simples a tu mascota de manera divertida y efectiva.",
+        "category": "entrenamiento",
+        "price": 349,
+        "thumbnail": "pet_training_keyboard.jpg",
+        "code": "PET016",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 17,
+        "title": "Cargador de viaje 3-en-1 para mascotas",
+        "description": "Cargador multifuncional para dispositivos de seguimiento y entrenamiento de tus mascotas.",
+        "category": "accesorios de viaje",
+        "price": 149.95,
+        "thumbnail": "travel_charger.jpg",
+        "code": "PET017",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 18,
+        "title": "Lápiz interactivo para entrenamiento",
+        "description": "Lápiz de entrenamiento interactivo que ayuda a enseñar trucos y mejorar la comunicación con tu mascota.",
+        "category": "entrenamiento",
+        "price": 129,
+        "thumbnail": "interactive_training_pencil.jpg",
+        "code": "PET018",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 19,
+        "title": "Visión Pro para mascotas",
+        "description": "Gafas protectoras diseñadas para mantener a tu mascota segura de rayos UV y escombros durante aventuras al aire libre.",
+        "category": "protección visual",
+        "price": 3499,
+        "thumbnail": "pet_vision_pro.jpg",
+        "code": "PET019",
+        "stock": 20,
+        "status": false
+    }
+]

@@ -1,0 +1,14 @@
+<section class="section_cart">
+    <h1>Carrito</h1>
+    <span>ID Carrito: {{cartId}}</span>
+    <ul class="cart_productList">
+        {{#each products }}
+        <li>
+            <p> {{ this.product.title }}</p>
+            <p>Categoria: {{ this.product.category }}</p>
+            <p>Precio: ${{ this.product.price }}</p>
+            <p>Cantidad: {{ this.quantity }}</p>
+        </li>
+        {{/each}}
+    </ul>
+</section>

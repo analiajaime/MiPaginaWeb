@@ -1,0 +1,35 @@
+<main>
+    <div class="navbar_promos">
+        <p>10% de descuento en alimentos para perros</p>
+    </div>
+    <section class="section_home">
+        <div class="contrainer_title_home">
+            <h1>HUELLITAS <span>Todos los productos para familias multiespecie.</span></h1>
+        </div>
+        <div class="container_homeProducts">
+            {{#each products}}
+            {{#if status}}
+            <div class="productCard">
+                {{#if stock}}
+                <span class="productCard_inStock">HAY STOCK</span>
+                {{else}}
+                <span class="productCard_outOfStock">SIN STOCK</span>
+                {{/if}}
+                <h3>{{title}}</h3>
+                <img class="productCard_img" src="../assets/images/store/{{thumbnails}}" alt={{title}}></img>
+                <div class="productCard_info">
+                    <div class="productCard_info_text">
+                        <h4>From ${{price}}</h4>
+                    </div>
+                    <button class="productCard_info_button" id={{id}}>Comprar</button>
+                </div>
+            </div>
+            {{/if}}
+            {{/each}}
+        </div>
+    </section>
+</main>
+{{>footer}}
+<script src="https://cdn.socket.io/4.7.3/socket.io.min.js"
+    integrity="sha384-+miq58Ltmjm+SSP5g8Ok6dpMO/6R4n8xe/x1Yj0Bdb9kiEz25LTnWv/GZQTRQamg"
+    crossorigin="anonymous"></script>

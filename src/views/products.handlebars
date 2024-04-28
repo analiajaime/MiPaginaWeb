@@ -1,0 +1,26 @@
+<section class="section_products">
+    <h1>Listado de productos</h1>
+    <ul>
+        {{#each products }}
+        <div class="product_container">
+            <li> {{this.title}} </li>
+            <button class="button_detail" type="button"><a href="http://localhost:8080/products/{{this._id}}">Comprar</a></button>
+        </div>
+        {{/each}}
+    </ul>
+    <div class="prev-netxPage_buttons">
+        {{#unless hasPrevPage}}
+        <span class="prev_page_notEnabled">Atrás</span>
+        {{/unless}}
+        {{#if hasPrevPage}}
+        <a href="/products?page={{prevPage}}">Atrás</a>
+        {{/if}}
+        <p>Page {{currentPage}} de {{totalPages}}</p>
+        {{#if hasNextPage}}
+        <a href="/products?page={{nextPage}}">Próximos</a>
+        {{/if}}
+        {{#unless hasNextPage}}
+        <span class="prev_page_notEnabled">Próximos</span>
+        {{/unless}}
+    </div>
+</section>
