@@ -429,7 +429,7 @@ header {
 
 .productCard_info_button,
 .productCard_info_button_outOfStock {
-    width: 5rem;
+    width: 10rem;
     height: 3.4rem;
     background-color: var(--clr-blue);
     border-radius: 2rem;
