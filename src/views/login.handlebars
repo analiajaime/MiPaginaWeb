@@ -4,15 +4,15 @@
 <section class="section_login">
     <div class="login_container">
         <div class="loginTitle_container">
-            <h1>Sign in</h1>
-            <span>To access exclusive shopping benefits.</span>
+            <h1>Iniciá sesión</h1>
+            <span>y accedé a grandes descuentos</span>
         </div>
         <form action="/api/sessions/login" method="POST">
             <div class="input_container_total">
                 <span class="input_error">{{errors.email}}</span>
                 <div class="input_container">
                     <input class="input" id="email" type="email" name="email" placeholder="" autoComplete="off">
-                    <span class="input_placeholder">Email Address</span>
+                    <span class="input_placeholder">Correo electrónico</span>
                     <div class="input_iconError"></div>
                 </div>
             </div>
@@ -21,19 +21,19 @@
                 <div class="input_container">
                     <input class="input" id="password" type="password" name="password" placeholder=""
                         autoComplete="off">
-                    <span class="input_placeholder">Password</span>
+                    <span class="input_placeholder">Contraseña</span>
                     <div class="input_iconError"></div>
                 </div>
                 <div class="show_password_container">
                     <input type="checkbox" id="showPasswordCheckbox">
-                    <label>Show Password</label>
+                    <label>Mostrar contraseña</label>
                 </div>
             </div>
-            <button type="submit">Sign in</button>
+            <button type="submit">Loguearse</button>
         </form>
     </div>
     <div class="login_registerOption">
-        <span>Don’t have an account? <a href="http://localhost:8080/register">Create yours now.</a></span>
+        <span>No tenes tu cuenta abierta? <a href="http://localhost:8080/register">Creá tu propia HUELLA!</a></span>
     </div>
 </section>
 <script src="/js/login-register.js"></script>
