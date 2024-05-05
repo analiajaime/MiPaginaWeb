@@ -5,22 +5,17 @@ const handleThemes = () => {
     const darkModeBtn = document.querySelectorAll('#themeChanger_dark')
     const autoModeBtn = document.querySelectorAll('#themeChanger_auto')
 
-    // Obtener el estado actual del tema desde el localStorage
     const currentTheme = localStorage.getItem('theme') || 'auto'
     setTheme(currentTheme)
 
-    // Asignar manejadores de eventos
     lightModeBtn.forEach((e) => { e.addEventListener('click', () => setTheme('light')) })
     darkModeBtn.forEach((e) => { e.addEventListener('click', () => setTheme('dark')) })
     autoModeBtn.forEach((e) => { e.addEventListener('click', () => setTheme('auto')) })
 
     function setTheme(theme) {
-        // Guardar el tema actual en el localStorage
         localStorage.setItem('theme', theme)
 
-        // Aplicar el tema
         if (theme === 'auto') {
-            // Configurar el tema automáticamente según las preferencias del sistema/navegador
             const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
             document.documentElement.setAttribute('data-theme', prefersDarkMode ? 'dark' : 'light')
             autoModeBtn.forEach((e) => { e.classList.add('selected') })
@@ -57,7 +52,6 @@ const createHeaderPage = () => {
     isHeaderActive = true
 }
 
-// Se agrega el evento para que aparezca el header
 const animatedDiv = document.getElementById("headerPage_container")
 const threshold = 380
 const pageTitle = document.title
@@ -70,10 +64,8 @@ if (pageTitle === 'Community Chat') {
 
         if (scrollY >= threshold) {
             createHeaderPage()
-            // Se agrega el evento para que desplace smooth hasta el header
             document.getElementById("headerPage_goUpbtn").addEventListener("click", (event) => {
                 event.preventDefault()
-                // Desplazamiento suave hacia el formulario
                 document.getElementById("header_global").scrollIntoView({ behavior: 'smooth' })
             })
         } else {

@@ -1,12 +1,19 @@
 const mongoose = require("mongoose")
 
-// Se crea el schema y el model de usuarios.
-
 const userSchema = new mongoose.Schema({
-    name: {
+    username: {
         type: String,
         required: true
     },
+    first_name: {
+        type: String,
+        required: true
+    },
+    last_name: {
+        type: String,
+        required: true
+    },
+
     email: {
         type: String,
         required: true
@@ -15,4 +22,12 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     }
+
+
 })
+
+const UserModel = mongoose.model("users", userSchema)
+
+module.exports = UserModel
+
+
