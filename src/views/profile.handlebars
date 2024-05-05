@@ -1,0 +1,12 @@
+{{> header}}
+
+<main>
+    <section class="section_profile">
+        <h1>Bienvenid@ {{user.username}}!</h1>
+        <span>Nombre: {{user.first_name}}</span>
+        <span>Apellido: {{user.last_name}}</span>
+        <span>Correo Electrónico: {{user.email}}</span>
+        
+        <a href="/api/sessions/logout">Logout</a>
+    </section>
+</main>
