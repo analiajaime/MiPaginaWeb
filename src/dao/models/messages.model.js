@@ -1,6 +1,5 @@
 const mongoose = require("mongoose")
 
-// Se crea el schema y el model de mensajes
 const messageSchema = new mongoose.Schema({
     user: {
         type: String,

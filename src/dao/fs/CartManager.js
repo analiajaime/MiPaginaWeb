@@ -5,7 +5,6 @@ class CartManager {
         this.carts = []
         this.path = path
         this.lastId = 0
-        // Se cargan los carritos almacenados en el archivo
         this.loadCarts()
     }
 
@@ -18,7 +17,6 @@ class CartManager {
             }
         } catch (error) {
             console.error("Error loading carts from the file", error)
-            // Si el archivo no existe, se crea.
             await this.saveCarts()
         }
     }
@@ -38,7 +36,6 @@ class CartManager {
                 products: []
             }
             this.carts.push(newCart)
-            // Se guarda el array en el archivo
             await this.saveCarts()
             return newCart
         } catch (error) {
@@ -61,21 +58,18 @@ class CartManager {
 
     async addProductToCart(cartId, productId, productManager, quantity = 1) {
         try {
-            // Se verifica si el carrito existe en el array de carritos
             const cart = await this.getCartById(cartId)
             if (!cart) {
                 console.error(`No cart exists with the id ${cartId}`)
                 return cartId
             }
 
-            // Se verifica si el producto existe en el array de productos
             const product = await productManager.getProductById(productId)
             if (!product) {
                 console.error(`A product with the id ${productId} was not found.`)
                 return productId
             }
 
-            // Se verifica si el producto ya existe en el carrito.
             const productsExist = cart.products.find(p => p.product === productId)
             if (productsExist) {
                 productsExist.quantity += quantity

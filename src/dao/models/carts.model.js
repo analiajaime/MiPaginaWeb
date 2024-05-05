@@ -1,6 +1,5 @@
 const mongoose = require("mongoose")
 
-// Se crea el schema y el model de carritos
 const cartSchema = new mongoose.Schema({
     products: [
         {

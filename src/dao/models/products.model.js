@@ -1,7 +1,6 @@
 const mongoose = require("mongoose")
 const mongoosePaginate = require("mongoose-paginate-v2")
 
-// Se crea el schema y el model de productos
 const productSchema = new mongoose.Schema({
     title: {
         type: String,
