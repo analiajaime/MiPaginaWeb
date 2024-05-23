@@ -45,6 +45,15 @@ app.use(session({
     app.set('view engine', 'handlebars')
     app.set("views", "./src/views")
 
+// Passport
+
+const passport = require('passport')
+const initializePassport = require('./config/passport-config.js')
+
+initializePassport(passport)
+app.use(passport.initialize())
+app.use(passport.session())
+
 // Routing
 app.use("/", require("./routes/views.router")(productManager, cartManager))
 
