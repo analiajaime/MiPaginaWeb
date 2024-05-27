@@ -48,7 +48,7 @@ app.use(session({
 // Passport
 
 const passport = require('passport')
-const initializePassport = require('./config/passport-config.js')
+const initializePassport = require('./config/passport.config.js')
 
 initializePassport(passport)
 app.use(passport.initialize())
