@@ -5,6 +5,7 @@ class ProductManager {
         this.products = []
         this.path = path
         this.lastId = 0
+        // Se cargan los productos almacenados en el archivo
         this.loadProducts()
     }
 
@@ -17,6 +18,7 @@ class ProductManager {
             }
         } catch (error) {
             console.error("Error loading products from the file", error)
+            // Si el archivo no existe, se crea.
             await this.saveProducts()
         }
     }
@@ -33,17 +35,19 @@ class ProductManager {
         try {
             let { title, description, category, price, thumbnail, code, stock, status } = newObject
 
-            
+            // Se valida que todos los campos sean obligatorios
             if (!title || !description || !category || !price || !thumbnail || !code || !stock || status == undefined || status == null) {
                 console.error("All fields are mandatory.")
                 return
             }
 
+            // Se valida que no se repita el campo "code"
             if (this.products.some(product => product.code === code)) {
                 console.error("A product with that code already exists.")
                 return
             }
-            
+
+            // Se agrega un producto con id autoincrementable
             const newProduct = {
                 id: ++this.lastId,
                 title,
@@ -53,11 +57,12 @@ class ProductManager {
                 thumbnail,
                 code,
                 stock: parseInt(stock),
-                status: JSON.parse(status)
+                status: JSON.parse(status) // para que retorne un booleano
             }
             this.products.push(newProduct)
             console.log("Product added:", newProduct)
 
+            // Se guarda el array actualizado en el archivo
             await this.saveProducts(this.products)
         } catch (error) {
             console.error("Error adding the product:", error)
@@ -85,8 +90,10 @@ class ProductManager {
 
     async updateProduct(id, updatedProduct) {
         try {
+            // const arrayProducts = await this.loadProducts()
             const index = this.products.findIndex(product => product.id === id)
             if (index !== -1) {
+                // Se actualiza el producto
                 this.products.splice(index, 1, { id: id, ...updatedProduct })
                 await this.saveProducts(this.products)
                 console.log("Product updated:", updatedProduct)
@@ -100,8 +107,10 @@ class ProductManager {
 
     async deleteProduct(id) {
         try {
+            // const arrayProducts = await this.loadProducts()
             const index = this.products.findIndex(product => product.id === id)
             if (index !== -1) {
+                // Se Elimina el producto
                 const deletedProduct = this.products.splice(index, 1)
                 await this.saveProducts(this.products)
                 console.log("Product deleted:", deletedProduct)
